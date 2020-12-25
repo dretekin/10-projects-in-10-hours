@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #663399;
+    font-family: "Poppins", sans-serif;
+}
+
+.pg {
+    background-color: #2E0C50;
+    padding: 1em 1.5em;
+}
+
+#pg__display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #451C6D;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: #fff;
+    min-width: 350px;
+    min-height: 80px;
+}
+
+#passwordShadow {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 4px;
+    background-color: #fff;
+    color: #451C6D;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+}
+#pg__display:hover #copy {
+    opacity: 1;
+    pointer-events: visible;
+    transform: translateY(0);
+}
+
+#pg__options > div {
+    padding: 12px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type='number'] {
+    width: 70px;   
+}
+
+#pg__gen-btn {
+    background-color: #ECB62B;
+    border: none;
+    color: #663399;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 12px;
+    outline: none;
+    cursor: pointer;
+}
