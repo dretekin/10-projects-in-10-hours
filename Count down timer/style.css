@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("snow.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.count-down-timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.count-down-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+}
+
+.count-down-timer__time {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.count-down-timer__time div div:first-child {
+    font-size: 3em;
+}
+.count-down-timer__time div div:last-child {
+    font-size: 1.2em;
+}
